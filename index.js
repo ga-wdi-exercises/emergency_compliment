@@ -1,4 +1,5 @@
 var app = require('express')()
+var Compliment = require("./models/compliment")
 var complimentsController = require("./controllers/complimentsController")
 
 app.get("/compliments", complimentsController.index)

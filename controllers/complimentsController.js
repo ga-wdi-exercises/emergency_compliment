@@ -1,17 +1,11 @@
-var compliments = [
-  "Your instructors love you",
-  "High five = ^5",
-  "Is it Ruby Tuesday yet?",
-  "It's almost beer o'clock",
-  "The Force is strong with you"
-];
+var Compliment = require("../models/compliment")
 
 var complimentsController = {
   index: function(req,res){
-    res.render("compliments/index.hbs", {compliments: compliments});
+    res.render("compliments/index.hbs", {compliments: Compliment.all()});
   },
   show: function(req, res){
-    res.render("compliments/show.hbs", {compliment: compliments[req.params.index]});
+    res.render("compliments/show.hbs", {compliment: Compliment.find(req.params.index)});
   },
 };
 
