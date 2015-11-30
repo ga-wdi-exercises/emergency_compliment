@@ -11,6 +11,17 @@ var complimentsController = {
       }
     })
   },
+  create: function(req, res){
+    var compliment = Compliment(req.body.compliment); // `new` is omitted to return string value
+    res.format({
+      html: function(){
+	res.redirect("/compliments/" + Compliment.all().indexOf(compliment));
+      },
+      json: function(){
+        res.json(compliment);
+      }
+    })
+  },
   show: function(req, res){
     var compliment = Compliment.find(req.params.index);
     res.format({

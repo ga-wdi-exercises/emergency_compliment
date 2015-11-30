@@ -6,8 +6,9 @@ var compliments = [
   "The Force is strong with you"
 ];
 
-var Compliment = function(){
-  
+var Compliment = function( compliment ){
+  compliments.push(compliment);
+  return compliment; // only when `new` is omitted
 }
 
 Compliment.prototype = {
