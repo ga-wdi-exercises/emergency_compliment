@@ -9,20 +9,20 @@ var compliments = [
 var Compliment = function( compliment ){
   compliments.push(compliment);
   return compliment; // only when `new` is omitted
-}
+};
 
 Compliment.prototype = {
   destroy: function(index){
     compliments.splice(index,1);
   }
-}
+};
 
 Compliment.all = function(){
   return compliments;
-}
+};
 
 Compliment.find = function(index){
-  return new Compliment(compliments[index]);
-}
+  return Compliment.all()[index];
+};
 
 module.exports = Compliment;
