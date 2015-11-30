@@ -9,6 +9,12 @@ var complimentsController = {
     res.render('compliments/show.hbs',{
       compliment: compliments[req.params.id]
     });
+  },
+  create: function(req, res){
+    // use model to create compliment 
+    var compliment = Compliment.create(req.body.compliment)
+    // redirect to compliment
+    res.redirect("/compliments")
   }
 }
 

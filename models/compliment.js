@@ -11,4 +11,8 @@ Compliment.all = function(){
   return compliments;
 }
 
+Compliment.create = function(compliment){
+  compliments.push(compliment);
+}
+
 module.exports = Compliment;
