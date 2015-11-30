@@ -29,7 +29,7 @@ var complimentsController = {
         res.render("compliments/show.hbs", {compliment: compliment});
       },
       json: function(){
-        res.json(JSON.stringify(compliment));
+        res.json(compliment);
       }
     });
   },
@@ -42,6 +42,19 @@ var complimentsController = {
       },
       json: function(){
         res.json();
+      }
+    });
+  },
+  update: function(req, res) {
+    var id = parseInt(req.params.index);
+    Compliment.all()[id] = req.body.compliment;
+
+    res.format({
+      html: function(){
+        res.redirect("/compliments/" + id);
+      },
+      json: function(){
+        res.json(Compliment.find(id));
       }
     });
   }
