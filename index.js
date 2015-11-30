@@ -12,7 +12,7 @@ app.get("/", function(req, res){
   res.redirect("/compliments");
 });
 
-app.get("/compliments/:index", complimentsController.show);
+app.get("/compliments/:index:format?", complimentsController.show);
 app.get("/compliments/?:format?", complimentsController.index);
 
 app.listen(3000, function(){

@@ -12,7 +12,15 @@ var complimentsController = {
     })
   },
   show: function(req, res){
-    res.render("compliments/show.hbs", {compliment: Compliment.find(req.params.index)});
+    var compliment = Compliment.find(req.params.index);
+    res.format({
+      html: function(){
+	res.render("compliments/show.hbs", {compliment: compliment});
+      },
+      json: function(){
+        res.json(JSON.stringify(compliment));
+      }
+    })
   },
 };
 
