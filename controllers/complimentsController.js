@@ -22,6 +22,18 @@ var complimentsController = {
       }
     })
   },
+  destroy: function(req, res){
+    var compliment = Compliment.find(req.params.index);
+    compliment.destroy();
+    res.format({
+      html: function(){
+	res.redirect("/compliments");
+      },
+      json: function(){
+        res.json();
+      }
+    })
+  }
 };
 
 module.exports = complimentsController;

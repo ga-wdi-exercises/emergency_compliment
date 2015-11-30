@@ -13,6 +13,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/compliments/:index:format?", complimentsController.show);
+app.delete("/compliments/:index:format?", complimentsController.destroy);
 app.get("/compliments/?:format?", complimentsController.index);
 
 app.listen(3000, function(){

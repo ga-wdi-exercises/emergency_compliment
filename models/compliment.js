@@ -10,12 +10,18 @@ var Compliment = function(){
   
 }
 
+Compliment.prototype = {
+  destroy: function(index){
+    compliments.splice(index,1);
+  }
+}
+
 Compliment.all = function(){
   return compliments;
 }
 
 Compliment.find = function(index){
-  return compliments[index];
+  return new Compliment(compliments[index]);
 }
 
 module.exports = Compliment;
