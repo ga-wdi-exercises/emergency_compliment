@@ -1,15 +1,20 @@
-var app = require('express')()
-var Compliment = require("./models/compliment")
-var complimentsController = require("./controllers/complimentsController")
+var express = require('express');
+var app = express();
+var Compliment = require("./models/compliment");
+var complimentsController = require("./controllers/complimentsController");
 
 app.use("*.json",function (req, res, next) {
   req.headers.accept = 'application/json';
   next();
 });
 
-app.get("/compliments/?:format?", complimentsController.index)
-app.get("/compliments/:index", complimentsController.show)
+app.get("/", function(req, res){
+  res.redirect("/compliments");
+});
+
+app.get("/compliments/?:format?", complimentsController.index);
+app.get("/compliments/:index", complimentsController.show);
 
 app.listen(3000, function(){
-  console.log('app listening on http://localhost:3000/')
+  console.log('app listening on http://localhost:3000/');
 })
