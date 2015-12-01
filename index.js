@@ -13,7 +13,7 @@ app.get("/compliments", complimentsController.index);
 
 // root
 app.get("/", function(req, res){
-  res.redirect("/compliments")
+  res.redirect("/compliments");
 });
 
 // create
@@ -28,7 +28,7 @@ app.get("/compliments/:id", complimentsController.show);
 
 // edit
   // edit route code goes here...
-
+app.get('/compliments/:id/edit', complimentsController.edit);
 // update
  // update route code goes here...
 
