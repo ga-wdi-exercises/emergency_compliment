@@ -17,7 +17,10 @@ var complimentsController = {
     res.redirect("/compliments")
   },
   edit: function (req, res) {
-    //Woot
+
+  },
+  update: function(req, res){
+    
   }
 }
 
