@@ -19,7 +19,12 @@ var complimentsController = {
     // redirect to compliment
     res.redirect("/compliments")
   }
-  // edit action code goes here...
+  edit: function(req, res){
+    // use model to create compliment
+    var compliment = Compliment.create(req.body.compliment)
+    // redirect to compliment
+    res.redirect("/compliments")
+  }
 
  // update action code goes here...
 }
