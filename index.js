@@ -19,11 +19,12 @@ app.get("/", function(req, res){
 // create
 app.post("/compliments", complimentsController.create);
 
+// new
+app.get("/compliments/new", complimentsController.new);
+
 // show
 app.get("/compliments/:id", complimentsController.show);
 
-// new
-app.get("/compliments/new", complimentsController.new);
 
 // edit
   // edit route code goes here...
