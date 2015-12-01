@@ -15,6 +15,9 @@ var complimentsController = {
     var compliment = Compliment.create(req.body.compliment)
     // redirect to compliment
     res.redirect("/compliments")
+  },
+  edit: function (req, res) {
+
   }
 }
 
