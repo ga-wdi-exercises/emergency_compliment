@@ -15,4 +15,8 @@ Compliment.create = function(compliment){
   compliments.push(compliment);
 }
 
+Compliment.find = function(id){
+  return compliments[parseInt(id) - 1]
+}
+
 module.exports = Compliment;
