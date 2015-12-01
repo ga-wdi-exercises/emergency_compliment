@@ -19,11 +19,11 @@ app.get("/", function(req, res){
 // create
 app.post("/compliments", complimentsController.create);
 
-// show
-app.get("/compliments/:id", complimentsController.show);
-
 // new
 app.get("/compliments/new", complimentsController.new);
+
+// show
+app.get("/compliments/:id", complimentsController.show);
 
 // edit
 app.get("/compliments/:id/edit", complimentsController.edit);
