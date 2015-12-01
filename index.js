@@ -26,10 +26,10 @@ app.get("/compliments/:id", complimentsController.show);
 app.get("/compliments/new", complimentsController.new);
 
 // edit
-app.get("/compliments/:id/edit", complimentsController.edit);
+  // edit route code goes here...
 
 // update
-app.put("/compliments/:id", complimentsController.update);
+ // update route code goes here...
 
 // Run our app on Port 3000
 app.listen(3000, function(){

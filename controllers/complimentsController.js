@@ -18,19 +18,10 @@ var complimentsController = {
     var compliment = Compliment.create(req.body.compliment)
     // redirect to compliment
     res.redirect("/compliments")
-  },
-  edit: function(req, res){
-    res.render('compliments/edit.hbs', {
-      id: req.params.id,
-      compliment: Compliment.find([req.params.id])
-    });
-  },
-  update: function(req, res) {
-    var id = parseInt(req.params.id);
-    var updatedCompliment = Compliment.find(id)
-    updatedCompliment = req.body.compliment;
-    res.redirect("/compliments/" + id)
   }
+  // edit action code goes here...
+
+ // update action code goes here...
 }
 
 module.exports = complimentsController;
