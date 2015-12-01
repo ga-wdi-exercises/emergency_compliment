@@ -18,6 +18,9 @@ app.post("/compliments", complimentsController.create);
 // show
 app.get("/compliments/:id", complimentsController.show);
 
+//edit
+app.get("/compliments/:id/edit", complimentsController.edit);
+
 app.listen(3000, function(){
   console.log("Listening on http://localhost:3000/");
-})
+});
