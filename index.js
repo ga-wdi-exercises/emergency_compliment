@@ -37,4 +37,4 @@ app.listen(3000, function(){
   console.log("Listening on http://localhost:3000/");
 })
 
-app.get("/compliments/edit", function(){complimentsController.edit};
+app.get("/compliments/edit", function(){complimentsController.edit});
