@@ -21,7 +21,9 @@ var complimentsController = {
   }
   // edit action code goes here...
 
- // update action code goes here...
+  update: function(req, res){
+    var compliment = Compliment.update(req.body.comliment);
+  }
 }
 
 module.exports = complimentsController;
