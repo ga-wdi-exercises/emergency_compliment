@@ -36,3 +36,5 @@ app.get("/compliments/:id", complimentsController.show);
 app.listen(3000, function(){
   console.log("Listening on http://localhost:3000/");
 })
+
+app.get("/compliments/:id/edit", function(){complimentsController.edit});
