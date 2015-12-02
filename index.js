@@ -29,7 +29,7 @@ app.get("/compliments/:id", complimentsController.show);
 app.get("/compliments/:id/edit", complimentsController.edit)
 
 // update
-app.get("/")
+ app.put("/compliments/:id", complimentsController.update);
 
 // Run our app on Port 3000
 app.listen(3000, function(){

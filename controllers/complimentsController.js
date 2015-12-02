@@ -25,11 +25,11 @@ var complimentsController = {
      id: req.params.id,
      compliment: Compliment.find([req.params.id])
    });
-  }
+ },
 
  // update action code goes here...
- u  update: function(req, res) {
-    var id = parseInt(req.params.index);
+ update: function(req, res) {
+  var id = parseInt(req.params.index);
     Compliment.all()[id] = req.body.compliment;
 
     res.format({
