@@ -28,6 +28,7 @@ app.get("/compliments/:id", complimentsController.show);
 
 // edit
   // edit route code goes here...
+app.get("/compliments/:id", complimentsController.edit);
 
 // update
  // update route code goes here...
