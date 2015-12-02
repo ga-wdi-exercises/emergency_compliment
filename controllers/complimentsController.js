@@ -20,7 +20,9 @@ var complimentsController = {
     res.redirect("/compliments")
   },
   edit: function(req, res){
-
+    res.render('compliments/edit.hbs', {
+      compliment: Compliment.find([req.params.id])
+    });
   }
   // edit action code goes here...
 
