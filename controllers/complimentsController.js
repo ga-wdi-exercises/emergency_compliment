@@ -28,6 +28,19 @@ var complimentsController = {
   }
 
  // update action code goes here...
+ u  update: function(req, res) {
+    var id = parseInt(req.params.index);
+    Compliment.all()[id] = req.body.compliment;
+
+    res.format({
+      html: function(){
+        res.redirect("/compliments/" + id);
+      },
+      json: function(){
+        res.json(Compliment.find(id));
+      }
+    });
+ }
 }
 
 module.exports = complimentsController;
