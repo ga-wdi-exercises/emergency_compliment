@@ -20,6 +20,10 @@ var complimentsController = {
     res.redirect("/compliments")
   }
   // edit action code goes here...
+  edit: function(req,res){
+    var compliment = Compliment.edit(req.body.compliment)
+    res.redirect("/compliments")
+  }
 
  // update action code goes here...
 }
