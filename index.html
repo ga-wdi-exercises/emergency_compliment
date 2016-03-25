@@ -10,9 +10,11 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Emergency Compliment</h1>
-  <div ng-controller='mainController as vm'>
-    <h2>{{vm.data.text}}</h2>
+  <h1>All Compliments:</h1>
+  <div data-ng-controller='mainController as vm'>
+    <div data-ng-repeat='compliment in vm.data'>
+      <h2>{{compliment.text}}</h2>
+    </div>
   </div>
 </body>
 </html>
