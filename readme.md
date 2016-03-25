@@ -1,4 +1,4 @@
-# WDI Emergency Compliment- Git-Teams-Starter (Angular)
+# WDI Emergency Compliment- Git-Teams-Solution (Angular)
 
 ## Mission…
 
