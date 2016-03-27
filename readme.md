@@ -12,6 +12,7 @@ We are "faking" a back-end by using `data.js` for our compliments.
 
 1. `git clone`
 2. `$ cd emergency_compliment`
+3. `$ git checkout git-teams-starter`
 3. `$ hs`
 4.  visit http://localhost:8080/ in your browser!
 
