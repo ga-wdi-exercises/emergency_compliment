@@ -5,8 +5,13 @@ h1{
   text-align: center;
   font-family: cursive;
 }
+h2 {
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  background-color: lemonchiffon;
+}
 div{
-  border: 1px solid black;
   text-align: center;
   background-color: lemonchiffon;
 }

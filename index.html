@@ -12,7 +12,9 @@
 <body>
   <h1>Emergency Compliment:</h1>
   <div data-ng-controller='mainController as vm'>
-    {{vm.data}}
+    <div data-ng-repeat='compliment in vm.allData'>
+      <h2>{{compliment}}</h2>
+    </div>
   </div>
 </body>
 </html>
