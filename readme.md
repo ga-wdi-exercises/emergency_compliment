@@ -1,6 +1,6 @@
 # WDI Emergency Compliment- Git-Teams-Starter (Angular)
 
-## Mission…
+## OBJECTIVE
 
 Create your own version of [Emergency Compliment](http://emergencycompliment.com/) using Angular!
 
