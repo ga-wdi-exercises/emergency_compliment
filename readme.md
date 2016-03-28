@@ -1,8 +1,5 @@
-# WDI Emergency Compliment- Git-Teams-Starter (Angular)
 
-# Random Change
-
-## OBJECTIVE
+## Mission Impossible
 
 Create your own version of [Emergency Compliment](http://emergencycompliment.com/) using Angular!
 
