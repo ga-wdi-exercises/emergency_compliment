@@ -36,4 +36,3 @@ When you visit `"/name"` (ie: `"/randy"`), the greeting should personalize itsel
 ## Level 3: user submitted compliments
 
 Allow a user to add to the list of compliments using a POST request. You can submit POST requests to the app using Postman or a form.
->>>>>>> 391d476efee90b03fba2eccd0fa9d7e6202d86b9
