@@ -5,9 +5,13 @@
   <title>Emergency Compliment</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="data.js"></script>
+  <script src="compliments.controller.js"></script>
 </head>
 <body>
   <h1>Emergency Compliment</h1>
+  <div data-ng-controller='Controller as vm'>
+    {{vm.data}}
+  </div>
 
 </body>
 </html>
