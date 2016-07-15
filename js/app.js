@@ -3,7 +3,7 @@
 
 (function(){
   angular
-  .module("compliments", []);
+  .module("compliments", []); 
 
 
 }());
