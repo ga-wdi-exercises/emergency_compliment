@@ -12,9 +12,13 @@ compliments = [
 colors = ["#FFBF00", "#0080FF","#01DF3A","#FF0080"]
 
 get '/compliment' do
-  return "#{compliments.sample}"
+  return "<body style='background-color:#{colors.sample}'><h1>#{compliments.sample}</h1></body>"
 end
 
 get '/:name' do
-  return "Hi there, #{params[:name]}. #{compliments.sample}"
+  return "<body style='background-color:#{colors.sample}'><h1>Hi there, #{params[:name]}. #{compliments.sample}</h1></body>"
+end
+
+post '/' do
+  compliments.push(params[:compliment])
 end
