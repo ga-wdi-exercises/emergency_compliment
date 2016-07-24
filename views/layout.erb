@@ -1,1 +1,22 @@
-<%= @colors %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency WDI Compliment</title>
+</head>
+<style>
+body {
+  background-color: <%= @color %>;
+}
+h1 {
+  font-size: 40px;
+}
+div {
+  font-size: 30px;
+}
+</style>
+<body>
+  <h1> Feeling down? Well don't you frown!</h1>
+  <%= yield %>
+</body>
+</html>
