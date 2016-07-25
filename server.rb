@@ -11,14 +11,14 @@ compliments = [
 
 colors = ["#FFBF00", "#0080FF","#01DF3A","#FF0080"]
 
-get '/compliment' do
-  return "<body style='background-color:#{colors.sample}'><h1>#{compliments.sample}</h1></body>"
+get '/compliment/:name?' do
+  @greeting = params[:name] ? "Hey, #{params[:name]}" : "Hey you."
+  @compliment = compliments.sample
+  @background_colors = colors.sample
+  erb :compliment
 end
 
-get '/:name' do
-  return "<body style='background-color:#{colors.sample}'><h1>Hi there, #{params[:name]}. #{compliments.sample}</h1></body>"
-end
-
+#not sure if this is what we needed to do?
 post '/' do
   compliments.push(params[:compliment])
 end
