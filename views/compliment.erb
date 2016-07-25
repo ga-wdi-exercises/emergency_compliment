@@ -1,9 +1,22 @@
-<!-- <body style='color: <%= @color%>;'>
-  <div style='position: fixed; top: 50%; left: 50%;'>
-    <p style='color: white;'>
-      <%= @compliment%>
-    </p>
-  </div>
-</body> -->
-
-Hello
+<div class="center">
+  <p>
+    <%= @compliment %>
+  </p>
+</div>
+<style media="screen">
+  body {
+  background: <%= @color%>;
+  text-align: center;
+  }
+  .center {
+    position: fixed;
+    width: 90%;
+    margin:0 auto;
+    top: 50%;
+}
+  p {
+    font-size: 2em;
+    color: white;
+    font-family: serif;
+  }
+</style>
