@@ -17,5 +17,3 @@ We are "faking" a back-end by using `data.js` for our compliments.
 4.  visit http://localhost:8080/ in your browser!
 
 ## Level 1: Generic Compliment
-
-When you visit the root `http://localhost:8080/` it should display a randomly chosen compliment.
