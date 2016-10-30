@@ -11,7 +11,16 @@ compliments = [
 ]
 
 get '/' do
-  @greeting = "Here's a little something to cheer you up:"
+  @greeting_name = "Hey There!"
+  @greeting_msg = "Here's a little something to cheer you up:"
+  @compliment = compliments.sample
+  erb :index
+end
+
+get '/:name' do
+  @name = params[:name].capitalize
+  @greeting_name = "Hey #{@name}!"
+  @greeting_msg = "Here's a little something to cheer you up:"
   @compliment = compliments.sample
   erb :index
 end
