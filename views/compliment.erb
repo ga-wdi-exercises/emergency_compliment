@@ -1,6 +1,6 @@
 <div style="background:<%= @color %>" class="compliment-box">
   <% if @name %>
-    <p> Hello, <%=@name %></p>
+    <p> Hello, <%=@name.capitalize %></p>
   <% end %>
   <p><%= @compliment %></p>
 </div>
