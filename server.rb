@@ -20,16 +20,20 @@ get '/' do
 end
 
 get '/:name' do
-  @greeting = "Hello, #{params[:name].capitalize}"
+  @name = params[:name]
+  @greeting = "Hello, #{@name.capitalize}"
   @compliment = compliments.sample
   @color = colors.sample
-  erb :compliment
+  erb :custom
 end
 
-post '/' do
+post '/new_data' do
   compliments << params[:new_compliment]
-  @greeting = "Hello, friend!"
-  @compliment = compliments.sample
-  @color = colors.sample
-  erb :compliment
+  redirect "/"
+end
+
+
+post '/new_data_custom' do
+  compliments << params[:new_compliment]
+  redirect "/#{params[:name]}"
 end
