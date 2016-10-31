@@ -18,6 +18,10 @@ get '/' do
   erb :compliment
 end
 
+get '/empty_compliment' do
+  erb :empty_compliment
+end
+
 get '/:name' do
   @name = params[:name].to_s
   @compliment = compliments.sample
@@ -25,6 +29,10 @@ get '/:name' do
   erb :compliment
 end
 
-post '/compliment/create' do
+post '/create' do
+  if params[:new] == ""
+    redirect :empty_compliment
+  end
   compliments << params[:new]
+  redirect "/"
 end
