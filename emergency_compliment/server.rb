@@ -15,13 +15,18 @@ get '/' do
   @greeting = "Hey, what's up?"
   @compliment = compliments.sample
   @color = colors.sample
-  erb :layout
+  erb :compliment
 end
 
 get '/:name' do
-
   @compliment = compliments.sample
+  @name = params[:name]
   @color = colors.sample
   @greeting = "Oh hey, #{params[:name].capitalize}"
-  erb :layout
+  erb :compliment
+end
+
+post '/' do
+  compliments << params[:compliment]
+  redirect "/"
 end
