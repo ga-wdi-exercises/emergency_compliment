@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <style>
+  body {
+    background-color: <%= @color %>;
+  }
+  </style>
+</head>
+  <body>
+    <h1>Emergency WDI-themed Compliment</h1>
+    <form action="/" method = 'post'>
+      <input type="text" name='new_compliment'>
+      <input type="submit">
+    </form>
+    <%= yield %>
+  </body>
+</html>
