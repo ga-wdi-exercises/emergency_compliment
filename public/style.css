@@ -1,0 +1,23 @@
+div {
+  width: 610px;
+  outline: white dashed 3px;
+  margin: 0 auto;
+  line-height: 70px;
+
+}
+body {
+  color: white;
+  font-family: Arial Black;
+  font-weight: 800;
+  text-align: center;
+}
+
+h1 {
+  line-height: 200px;
+  font-size: 2.3em;
+}
+
+p {
+  font-size: 1.9em;
+  /*line-height: 180px;*/
+}
