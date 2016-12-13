@@ -18,14 +18,18 @@ get '/' do
   erb :index
 end
 
-get '/:name' do
-
+get '/personal/:name' do
   @compliment = "Hello #{params[:name]}  #{compliments.sample}"
   @bg = colors.sample
   erb :index
-  form
 end
 
-get '/create' do
+get '/post' do
+  @bg = colors.sample
   erb :post
+end
+
+post '/postc' do
+  compliments.push(params[:comp])
+  redirect '/'
 end

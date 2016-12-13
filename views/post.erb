@@ -1,0 +1,31 @@
+<body>
+<div class="container">
+  <h1>Input your complement</h1><br>
+<form method="POST" action="/postc">
+<input type="text" name="comp">
+<input type="submit">
+</form>
+</div>
+</body>
+
+
+<style>
+
+body{
+  background-color: black;
+}
+
+.container{
+display: flex;
+align-items: center;
+background-color:<%=@bg%>;
+height: 100%;
+width: 50%;
+margin: 0 auto;
+}
+
+h1{
+
+  margin: 0 auto;
+}
+</style>
