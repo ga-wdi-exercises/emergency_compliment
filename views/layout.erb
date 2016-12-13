@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+    body {
+      background-color: <%= @colors.sample %>;
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      padding: 0;
+
+    }
+    #container {
+      margin:auto;
+      text-align: center;
+      width: 100%;
+
+      width: calc(100% - 250px);
+      padding: calc(25% - 150px);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*border: 1px solid blue;*/
+    }
+    .content{
+      height: 300px;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      /*border: 1px solid red;*/
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 6em;
+      /*align-content: center;*/
+    }
+    p {
+    font-size:  3em;
+    margin-top: -1em;
+    /*align-content: center;*/
+    }
+    button {
+      width: 200px;
+      height: 100px;
+      font-size: 2em;
+      font-weight: 900;
+      border-radius: 1em;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div id = "container">
+    <div class = "content">
+      <h1> Hello <%= @name %> ! </h1>
+      <p><%= @compliments.sample %></p>
+       <button value="Refresh" onClick="history.go()"> Get more </button>
+    </div>
+  </div>
+
+</body>
+</html>
