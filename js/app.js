@@ -2,5 +2,5 @@
 
  (function(){
    angular
-   .module("compliments", [])
+   .module("emergencyComp", [])
  }());
