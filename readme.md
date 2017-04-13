@@ -31,7 +31,7 @@ colors = ["#FFBF00", "#0080FF","#01DF3A","#FF0080"]
 
 ## Level 2: personalized compliment
 
-When you visit `"/name"` (ie: `"/randy"`), the greeting should personalize itself to the provided name. There should still be a random compliment and background color.
+When you visit `"/:name"` (ie: `"/randy"`), the greeting should personalize itself to the provided name. There should still be a random compliment and background color.
 
 ## Level 3: user submitted compliments
 
