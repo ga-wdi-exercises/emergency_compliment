@@ -1,0 +1,19 @@
+<div>
+  <h4><%= @hello %></h4>
+</div>
+
+<div>
+  <%= @compliment %>
+</div>
+
+<div class="updaters">
+<form action="/name" method="put">
+  <input type="text" name="name" placeholder="enter your name">
+  <input type="submit" value="Enter">
+</form>
+
+<form action="/" method="post">
+  <input type="text" name="compliment" placeholder="add a compliment">
+  <input type="submit" value="Enter">
+</form>
+</div>
