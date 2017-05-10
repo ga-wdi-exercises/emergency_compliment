@@ -1,0 +1,17 @@
+<style>
+body {
+  background-color: <%= @colors %>;
+}
+</style>
+<p><%= @personal %></p>
+<div><p><%= @compliment %></p></div>
+<div>
+  <form action="/reset" method="post">
+  <input type="submit" value="Gimme Another One!">
+</form>
+
+<form action="/" method="post">
+  <input type="text" name="comp" placeholder="have a suggestion?">
+  <input type="submit" value="Add it!">
+</form>
+</div>
