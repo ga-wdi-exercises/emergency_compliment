@@ -1,0 +1,14 @@
+<div style="background:<%= @color %>" class="compliment-box">
+  <% if @name %>
+    <p> Hello, <%=@name.capitalize %></p>
+  <% end %>
+  <p><%= @compliment %></p>
+</div>
+
+<div>
+  <form method="post" action="/create">
+    <input type="text" name="new">
+    <input type="submit" value="add compliment">
+  </form>
+
+</div>
