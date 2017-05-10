@@ -37,3 +37,6 @@ var data  = [
   "You deserve a compliment!",
   "Hello, good looking."
 ];
+
+angular
+  .module("emergency_compliment", [])
