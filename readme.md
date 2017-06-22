@@ -2,6 +2,9 @@
 
 ## Mission…
 
+NAYANA IS MAKING SOME CHANGES!!!
+
+
 Create your own version of [Emergency Compliment](http://emergencycompliment.com/), except making the compliments WDI-themed. When a user visits the site, they should be greeted with a WDI-themed compliment to cheer them up.
 
 Create a new directory called `emergency_compliment` that holds your Sinatra app. Within this folder, create the following files:
