@@ -2,7 +2,7 @@
 
 (function(){
   var app = angular.module("compliments");
-  app.controller("complimentsController", ComplimentsController);
+  app.controller("mainController", ComplimentsController);
 
   function ComplimentsController(){
     var vm = this;
