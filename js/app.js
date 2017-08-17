@@ -2,7 +2,7 @@
 
 (function () {
   angular
-  .module('compliments', [
+  .module('emergencycomp', [
     'ui.router'
   ])
 })
