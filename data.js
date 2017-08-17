@@ -36,4 +36,4 @@ var data  = [
   "You're tremendous!",
   "You deserve a compliment!",
   "Hello, good looking."
-];
+]; 
